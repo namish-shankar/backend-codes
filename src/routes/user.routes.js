@@ -4,4 +4,5 @@ const router=Router()
 
 router.route("/register").post(registerUser)
 
+app.use(express.json());
 export default router

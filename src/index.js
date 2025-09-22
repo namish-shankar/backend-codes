@@ -12,9 +12,9 @@ import connectDB from "./db/index.js";
 
 
 //APPROACH 1:
-// import express from "express";
+ import express from "express";
 
-// const app=express()
+const app=express()
 // (async () => {
 //     try {
 //         await mongoose.connect('${process.env.MONGODB_URI}/${DB_NAME}', {);
@@ -41,9 +41,8 @@ connectDB()
             console.log("ERROR:",error);
             throw error
         })
-    app.listen(process.env.PORT|| 8000,()=>{
-        console.log("server is running at port : ${process.env.PORT}");
-
+    app.listen((process.env.PORT || 8000),()=>{
+         console.log(`Server is running at port: ${process.env.PORT || 8000}`);
     })
 })
 .catch((err)=>{
