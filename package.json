@@ -1,4 +1,20 @@
 {
+  "name": "mybackend",
+  "version": "1.0.0",
+  "description": "a basic deployed app",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "backend"
+  ],
+  "author": "namish shankar",
+  "license": "ISC",
   "dependencies": {
     "axios": "^1.11.0",
     "bcrypt": "^6.0.0",
@@ -15,22 +31,7 @@
     "prettier": "^3.6.2"
   },
   "devDependencies": {
-    "hardhat": "^1.0.1",
     "nodemon": "^3.1.10",
     "tailwindcss": "^4.1.11"
-  },
-  "name": "mybackend",
-  "version": "1.0.0",
-  "description": "a basic deployed app",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
-  },
-  "keywords": [
-    "node",
-    "chai"
-  ],
-  "author": "namish shankar",
-  "license": "ISC"
+  }
 }

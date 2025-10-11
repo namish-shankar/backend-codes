@@ -24,6 +24,7 @@ import userRouter from './routes/user.routes.js'
 
 //routes declaration
 //app.use(and not app.get) because router to lane ke liye we have to use middleware
+console.log("✅ userRouter loaded");
 
 app.use("/api/v1/users",userRouter)//control passes to user.routes.js
 
