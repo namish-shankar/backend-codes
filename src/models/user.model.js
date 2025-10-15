@@ -73,6 +73,8 @@ process.env.ACCESS_TOKEN_SECRET,
     expiresIn:process.env.ACCESS_TOKEN_EXPIRY
 })
 }
+//access token :short lived 
+//refresh token: live longer
 
 userSchema.methods.generateRefreshToken=function(){
 
